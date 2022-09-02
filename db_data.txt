@@ -1,0 +1,14 @@
+2 таблицы в базе данных
+
+1 таблица users:
+     "user_id INT PRIMARY KEY AUTO_INCREMENT, " - id пользователя
+     "username VARCHAR(30) NOT NULL, " - имя пользователя
+     "password VARCHAR(50) NOT NULL, " - пароль пользователя
+     "birthday DATE NOT NULL, " - день рождения пользователя
+     "check_log VARCHAR(1) DEFAULT '0')") - проверка на логин
+
+2 таблица phone_book:
+     "user_id INT PRIMARY KEY AUTO_INCREMENT, " - id контакта
+     "book_name VARCHAR(30) NOT NULL, " - имя контакта
+     "number VARCHAR(50) NOT NULL, " - номер телефона контакта
+     "birthday DATETIME NOT NULL )" - день рождения контакта
